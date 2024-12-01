@@ -1,6 +1,11 @@
 # mt19937ar
 Python implementation of [mt19937ar](http://www.math.sci.hiroshima-u.ac.jp/m-mat/MT/MT2002/mt19937ar.html)
 
+## Installation
+```bash
+pip install mt19937ar
+```
+
 ## Usage
 ```python
 from mt19937ar import MT19937ar
