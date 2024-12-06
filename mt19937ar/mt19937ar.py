@@ -67,3 +67,6 @@ class MT19937ar:
         y ^= y >> 18
 
         return y
+
+    def genrand_int31(self) -> int:
+        return self.genrand_int32() >> 1
