@@ -17,3 +17,14 @@ print(mt.genrand_int32()) # 1067595299
 print(mt.genrand_int32()) # 955945823
 print(mt.genrand_int32()) # 477289528
 ```
+
+## Testing
+Before running the test, you need to build C shared library.
+```bash
+gcc -shared -o tests/c/mt19937ar.so -fPIC tests/c/mt19937ar.c
+```
+
+Then run the test.
+```bash
+pipenv run test
+```
