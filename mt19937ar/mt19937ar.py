@@ -79,3 +79,8 @@ class MT19937ar:
 
     def genrand_real3(self) -> float:
         return (self.genrand_int32() + 0.5) * (1.0 / 4294967296.0)
+
+    def genrand_res53(self) -> float:
+        a = self.genrand_int32() >> 5
+        b = self.genrand_int32() >> 6
+        return (a * 67108864.0 + b) * (1.0 / 9007199254740992.0)
