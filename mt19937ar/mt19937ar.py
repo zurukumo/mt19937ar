@@ -70,3 +70,6 @@ class MT19937ar:
 
     def genrand_int31(self) -> int:
         return self.genrand_int32() >> 1
+
+    def genrand_real1(self) -> float:
+        return self.genrand_int32() * (1.0 / 4294967295.0)
